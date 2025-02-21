@@ -1,13 +1,13 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;600&display=swap');
 
-/* Color Palette */
+/* Softer Color Palette */
 :root {
-    --primary-color: #B9C8A6; /* Light Green */
+    --primary-color: #DDE5C0; /* Light Beige-Green */
     --secondary-color: #4B7024; /* Olive Green */
     --text-color: #253B12; /* Dark Green */
-    --accent-color: #C0C9B4; /* Muted Green */
-    --deep-accent: #253B12; /* Forest Green */
+    --card-background: #FAFAF5; /* Lighter Off-White for Profile Box */
+    --navbar-footer: #3A5720; /* Deep Olive Green */
 }
 
 /* General Page Styling */
@@ -25,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--deep-accent);
+    background-color: var(--navbar-footer);
     padding: 15px 50px;
     color: white;
 }
@@ -70,10 +70,10 @@ nav ul li a:hover {
     justify-content: center;
     margin: 100px auto;
     max-width: 600px;
-    background: var(--accent-color);
+    background: var(--card-background); /* Softer off-white */
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Profile Image */
@@ -92,7 +92,7 @@ nav ul li a:hover {
 
 .profile-info h1 {
     font-size: 2.8em;
-    color: var(--deep-accent);
+    color: var(--text-color);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -109,7 +109,7 @@ nav ul li a:hover {
 /* Call-to-Action Button */
 .button {
     display: inline-block;
-    background: var(--deep-accent);
+    background: var(--secondary-color);
     color: white;
     padding: 12px 20px;
     font-size: 1.1em;
@@ -120,7 +120,7 @@ nav ul li a:hover {
 }
 
 .button:hover {
-    background: var(--secondary-color);
+    background: var(--text-color);
     color: white;
     transform: translateY(-3px);
 }
@@ -128,7 +128,7 @@ nav ul li a:hover {
 /* Footer */
 footer {
     text-align: center;
-    background-color: var(--deep-accent);
+    background-color: var(--navbar-footer);
     color: white;
     padding: 20px;
     font-size: 0.9em;
