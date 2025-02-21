@@ -3,10 +3,11 @@
 
 /* Color Palette */
 :root {
-    --primary-color: #EAD7BB; /* Soft Beige */
-    --secondary-color: #FFD369; /* Soft Yellow */
-    --text-color: #4A403A; /* Dark Brown */
-    --accent-color: #0D3B66; /* Deep Blue */
+    --primary-color: #B9C8A6; /* Light Green */
+    --secondary-color: #4B7024; /* Olive Green */
+    --text-color: #253B12; /* Dark Green */
+    --accent-color: #C0C9B4; /* Muted Green */
+    --deep-accent: #253B12; /* Forest Green */
 }
 
 /* General Page Styling */
@@ -16,7 +17,7 @@ body {
     color: var(--text-color);
     margin: 0;
     padding: 0;
-    animation: fadeIn 1s ease-in-out; /* Smooth fade-in effect */
+    animation: fadeIn 1s ease-in-out;
 }
 
 /* Navigation Bar */
@@ -24,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--accent-color);
+    background-color: var(--deep-accent);
     padding: 15px 50px;
     color: white;
 }
@@ -55,8 +56,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--secondary-color); /* Soft Yellow on Hover */
-    background: rgba(255, 211, 105, 0.2);
+    color: var(--secondary-color);
+    background: rgba(75, 112, 36, 0.2);
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -64,16 +65,18 @@ nav ul li a:hover {
 /* Profile Section */
 .profile {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 80px auto;
-    max-width: 900px;
-    background: white;
+    margin: 100px auto;
+    max-width: 600px;
+    background: var(--accent-color);
     padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
 }
 
+/* Profile Image */
 .profile-img img {
     width: 220px;
     height: 220px;
@@ -81,14 +84,15 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+/* Profile Info */
 .profile-info {
-    margin-left: 40px;
+    text-align: center;
     max-width: 500px;
 }
 
 .profile-info h1 {
     font-size: 2.8em;
-    color: var(--accent-color);
+    color: var(--deep-accent);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -105,25 +109,26 @@ nav ul li a:hover {
 /* Call-to-Action Button */
 .button {
     display: inline-block;
-    background: var(--accent-color);
+    background: var(--deep-accent);
     color: white;
-    padding: 10px 20px;
-    font-size: 1.2em;
+    padding: 12px 20px;
+    font-size: 1.1em;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    margin-top: 20px;
 }
 
 .button:hover {
     background: var(--secondary-color);
-    color: var(--text-color);
+    color: white;
     transform: translateY(-3px);
 }
 
 /* Footer */
 footer {
     text-align: center;
-    background-color: var(--accent-color);
+    background-color: var(--deep-accent);
     color: white;
     padding: 20px;
     font-size: 0.9em;
