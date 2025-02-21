@@ -85,17 +85,20 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Profile Info */
 .profile-info {
     text-align: center;
-    max-width: 500px;
+    max-width: 650px; /* Slightly wider for better spacing */
+    margin: 0 auto; /* Centers the text */
 }
 
+
 .profile-info h1 {
-    font-size: 2.8em;
-    color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em; /* Slightly smaller for balance */
+    color: var(--accent-color); /* A subtle contrast */
+    font-weight: 700;
+    word-wrap: break-word;
 }
+
 
 .profile-info h3 {
     font-size: 1.5em;
@@ -105,7 +108,22 @@ nav ul li a:hover {
 .profile-info p {
     font-size: 1.2em;
     color: var(--text-color);
+    line-height: 1.6; /* Increased for better readability */
 }
+
+.profile-img img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 
 /* Call-to-Action Button */
 .button {
