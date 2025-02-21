@@ -68,12 +68,13 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 100px auto;
-    max-width: 600px;
-    background: var(--card-background); /* Softer off-white */
+    margin: 50px auto;
+    max-width: 800px; /* Increase this value */
+    background: white;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 /* Profile Image */
