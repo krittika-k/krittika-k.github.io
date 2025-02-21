@@ -20,6 +20,25 @@ body {
     animation: fadeIn 1s ease-in-out;
 }
 
+.about-container {
+    max-width: 900px; /* Keep it similar to your Home Page */
+    background: white; /* Restore the box background */
+    margin: 50px auto; /* Center it */
+    padding: 40px;
+    border-radius: 12px; /* Rounded edges */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: center;
+}
+
+/* Styling for Assamese quote */
+.assam-quote {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-style: italic;
+    color: #4b7024;
+}
+
+
 /* Navigation Bar */
 header {
     display: flex;
