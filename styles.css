@@ -50,7 +50,16 @@ nav ul li a {
     font-weight: bold;
     font-size: 1.1em;
     font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
 }
+
+nav ul li a:hover {
+    color: var(--secondary-color); /* Soft Yellow on Hover */
+    background: rgba(255, 211, 105, 0.2); /* Light yellow highlight */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 
 nav ul li a:hover {
     color: var(--secondary-color);
